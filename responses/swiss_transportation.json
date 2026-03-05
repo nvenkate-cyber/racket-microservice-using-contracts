@@ -1,0 +1,1990 @@
+{
+    "connections": [
+        {
+            "from": {
+                "station": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                },
+                "arrival": null,
+                "arrivalTimestamp": null,
+                "departure": "2026-02-19T23:30:00+0100",
+                "departureTimestamp": 1771540200,
+                "delay": 3,
+                "platform": "6",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": "2026-02-19T23:33:00+0100",
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                }
+            },
+            "to": {
+                "station": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                },
+                "arrival": "2026-02-20T00:24:00+0100",
+                "arrivalTimestamp": 1771543440,
+                "departure": null,
+                "departureTimestamp": null,
+                "delay": null,
+                "platform": "3",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": null,
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                }
+            },
+            "duration": "00d00:51:00",
+            "transfers": 0,
+            "service": null,
+            "products": [
+                "RE33"
+            ],
+            "capacity1st": null,
+            "capacity2nd": null,
+            "sections": [
+                {
+                    "journey": {
+                        "name": "018486",
+                        "category": "RE",
+                        "subcategory": null,
+                        "categoryCode": null,
+                        "number": "33",
+                        "operator": "SBB",
+                        "to": "Gen\u00e8ve-A\u00e9roport",
+                        "passList": [
+                            {
+                                "station": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": null,
+                                "arrivalTimestamp": null,
+                                "departure": "2026-02-19T23:30:00+0100",
+                                "departureTimestamp": 1771540200,
+                                "delay": 3,
+                                "platform": "6",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:33:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:34:00+0100",
+                                "arrivalTimestamp": 1771540440,
+                                "departure": "2026-02-19T23:35:00+0100",
+                                "departureTimestamp": 1771540500,
+                                "delay": 3,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:38:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:42:00+0100",
+                                "arrivalTimestamp": 1771540920,
+                                "departure": "2026-02-19T23:43:00+0100",
+                                "departureTimestamp": 1771540980,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:44:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:49:00+0100",
+                                "arrivalTimestamp": 1771541340,
+                                "departure": "2026-02-19T23:50:00+0100",
+                                "departureTimestamp": 1771541400,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:50:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:54:00+0100",
+                                "arrivalTimestamp": 1771541640,
+                                "departure": "2026-02-19T23:55:00+0100",
+                                "departureTimestamp": 1771541700,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:55:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:59:00+0100",
+                                "arrivalTimestamp": 1771541940,
+                                "departure": "2026-02-20T00:00:00+0100",
+                                "departureTimestamp": 1771542000,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:00:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:04:00+0100",
+                                "arrivalTimestamp": 1771542240,
+                                "departure": "2026-02-20T00:06:00+0100",
+                                "departureTimestamp": 1771542360,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:06:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:13:00+0100",
+                                "arrivalTimestamp": 1771542780,
+                                "departure": "2026-02-20T00:14:00+0100",
+                                "departureTimestamp": 1771542840,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:14:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:24:00+0100",
+                                "arrivalTimestamp": 1771543440,
+                                "departure": null,
+                                "departureTimestamp": null,
+                                "delay": 0,
+                                "platform": "3",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": "2026-02-20T00:24:00+0100",
+                                    "departure": null,
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                }
+                            }
+                        ],
+                        "capacity1st": null,
+                        "capacity2nd": null
+                    },
+                    "walk": null,
+                    "departure": {
+                        "station": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        },
+                        "arrival": null,
+                        "arrivalTimestamp": null,
+                        "departure": "2026-02-19T23:30:00+0100",
+                        "departureTimestamp": 1771540200,
+                        "delay": 3,
+                        "platform": "6",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": null,
+                            "departure": "2026-02-19T23:33:00+0100",
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        }
+                    },
+                    "arrival": {
+                        "station": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        },
+                        "arrival": "2026-02-20T00:24:00+0100",
+                        "arrivalTimestamp": 1771543440,
+                        "departure": null,
+                        "departureTimestamp": null,
+                        "delay": 0,
+                        "platform": "3",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": "2026-02-20T00:24:00+0100",
+                            "departure": null,
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "from": {
+                "station": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                },
+                "arrival": null,
+                "arrivalTimestamp": null,
+                "departure": "2026-02-19T23:51:00+0100",
+                "departureTimestamp": 1771541460,
+                "delay": 0,
+                "platform": "8",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": "2026-02-19T23:51:00+0100",
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                }
+            },
+            "to": {
+                "station": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                },
+                "arrival": "2026-02-20T00:39:00+0100",
+                "arrivalTimestamp": 1771544340,
+                "departure": null,
+                "departureTimestamp": null,
+                "delay": null,
+                "platform": "4",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": null,
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                }
+            },
+            "duration": "00d00:48:00",
+            "transfers": 0,
+            "service": null,
+            "products": [
+                "IR 95"
+            ],
+            "capacity1st": null,
+            "capacity2nd": null,
+            "sections": [
+                {
+                    "journey": {
+                        "name": "001738",
+                        "category": "IR",
+                        "subcategory": null,
+                        "categoryCode": null,
+                        "number": "95",
+                        "operator": "SBB",
+                        "to": "Gen\u00e8ve",
+                        "passList": [
+                            {
+                                "station": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": null,
+                                "arrivalTimestamp": null,
+                                "departure": "2026-02-19T23:51:00+0100",
+                                "departureTimestamp": 1771541460,
+                                "delay": 0,
+                                "platform": "8",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:51:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-19T23:56:00+0100",
+                                "arrivalTimestamp": 1771541760,
+                                "departure": "2026-02-19T23:57:00+0100",
+                                "departureTimestamp": 1771541820,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-19T23:58:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:04:00+0100",
+                                "arrivalTimestamp": 1771542240,
+                                "departure": "2026-02-20T00:05:00+0100",
+                                "departureTimestamp": 1771542300,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:05:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:21:00+0100",
+                                "arrivalTimestamp": 1771543260,
+                                "departure": "2026-02-20T00:22:00+0100",
+                                "departureTimestamp": 1771543320,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:23:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:39:00+0100",
+                                "arrivalTimestamp": 1771544340,
+                                "departure": null,
+                                "departureTimestamp": null,
+                                "delay": 0,
+                                "platform": "4",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": "2026-02-20T00:39:00+0100",
+                                    "departure": null,
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                }
+                            }
+                        ],
+                        "capacity1st": null,
+                        "capacity2nd": null
+                    },
+                    "walk": null,
+                    "departure": {
+                        "station": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        },
+                        "arrival": null,
+                        "arrivalTimestamp": null,
+                        "departure": "2026-02-19T23:51:00+0100",
+                        "departureTimestamp": 1771541460,
+                        "delay": 0,
+                        "platform": "8",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": null,
+                            "departure": "2026-02-19T23:51:00+0100",
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        }
+                    },
+                    "arrival": {
+                        "station": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        },
+                        "arrival": "2026-02-20T00:39:00+0100",
+                        "arrivalTimestamp": 1771544340,
+                        "departure": null,
+                        "departureTimestamp": null,
+                        "delay": 0,
+                        "platform": "4",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": "2026-02-20T00:39:00+0100",
+                            "departure": null,
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "from": {
+                "station": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                },
+                "arrival": null,
+                "arrivalTimestamp": null,
+                "departure": "2026-02-20T00:00:00+0100",
+                "departureTimestamp": 1771542000,
+                "delay": 0,
+                "platform": "7E-H!",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": "2026-02-20T00:00:00+0100",
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                }
+            },
+            "to": {
+                "station": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                },
+                "arrival": "2026-02-20T00:52:00+0100",
+                "arrivalTimestamp": 1771545120,
+                "departure": null,
+                "departureTimestamp": null,
+                "delay": null,
+                "platform": "3",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": null,
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                }
+            },
+            "duration": "00d00:52:00",
+            "transfers": 0,
+            "service": null,
+            "products": [
+                "RE33"
+            ],
+            "capacity1st": null,
+            "capacity2nd": null,
+            "sections": [
+                {
+                    "journey": {
+                        "name": "018442",
+                        "category": "RE",
+                        "subcategory": null,
+                        "categoryCode": null,
+                        "number": "33",
+                        "operator": "SBB",
+                        "to": "Gen\u00e8ve",
+                        "passList": [
+                            {
+                                "station": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": null,
+                                "arrivalTimestamp": null,
+                                "departure": "2026-02-20T00:00:00+0100",
+                                "departureTimestamp": 1771542000,
+                                "delay": 0,
+                                "platform": "7E-H!",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:00:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:04:00+0100",
+                                "arrivalTimestamp": 1771542240,
+                                "departure": "2026-02-20T00:05:00+0100",
+                                "departureTimestamp": 1771542300,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:06:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:12:00+0100",
+                                "arrivalTimestamp": 1771542720,
+                                "departure": "2026-02-20T00:13:00+0100",
+                                "departureTimestamp": 1771542780,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:13:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:19:00+0100",
+                                "arrivalTimestamp": 1771543140,
+                                "departure": "2026-02-20T00:19:00+0100",
+                                "departureTimestamp": 1771543140,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:20:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:23:00+0100",
+                                "arrivalTimestamp": 1771543380,
+                                "departure": "2026-02-20T00:24:00+0100",
+                                "departureTimestamp": 1771543440,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:24:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:29:00+0100",
+                                "arrivalTimestamp": 1771543740,
+                                "departure": "2026-02-20T00:29:00+0100",
+                                "departureTimestamp": 1771543740,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:29:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:33:00+0100",
+                                "arrivalTimestamp": 1771543980,
+                                "departure": "2026-02-20T00:33:00+0100",
+                                "departureTimestamp": 1771543980,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:34:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:41:00+0100",
+                                "arrivalTimestamp": 1771544460,
+                                "departure": "2026-02-20T00:42:00+0100",
+                                "departureTimestamp": 1771544520,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:42:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:52:00+0100",
+                                "arrivalTimestamp": 1771545120,
+                                "departure": null,
+                                "departureTimestamp": null,
+                                "delay": 0,
+                                "platform": "3",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": "2026-02-20T00:52:00+0100",
+                                    "departure": null,
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                }
+                            }
+                        ],
+                        "capacity1st": null,
+                        "capacity2nd": null
+                    },
+                    "walk": null,
+                    "departure": {
+                        "station": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        },
+                        "arrival": null,
+                        "arrivalTimestamp": null,
+                        "departure": "2026-02-20T00:00:00+0100",
+                        "departureTimestamp": 1771542000,
+                        "delay": 0,
+                        "platform": "7E-H!",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": null,
+                            "departure": "2026-02-20T00:00:00+0100",
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        }
+                    },
+                    "arrival": {
+                        "station": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        },
+                        "arrival": "2026-02-20T00:52:00+0100",
+                        "arrivalTimestamp": 1771545120,
+                        "departure": null,
+                        "departureTimestamp": null,
+                        "delay": 0,
+                        "platform": "3",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": "2026-02-20T00:52:00+0100",
+                            "departure": null,
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "from": {
+                "station": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                },
+                "arrival": null,
+                "arrivalTimestamp": null,
+                "departure": "2026-02-20T00:30:00+0100",
+                "departureTimestamp": 1771543800,
+                "delay": 0,
+                "platform": "8",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": "2026-02-20T00:30:00+0100",
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501120",
+                    "name": "Lausanne",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.516795,
+                        "y": 6.629087
+                    },
+                    "distance": null
+                }
+            },
+            "to": {
+                "station": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                },
+                "arrival": "2026-02-20T01:22:00+0100",
+                "arrivalTimestamp": 1771546920,
+                "departure": null,
+                "departureTimestamp": null,
+                "delay": null,
+                "platform": "1",
+                "prognosis": {
+                    "platform": null,
+                    "arrival": null,
+                    "departure": null,
+                    "capacity1st": null,
+                    "capacity2nd": null
+                },
+                "realtimeAvailability": null,
+                "location": {
+                    "id": "8501008",
+                    "name": "Gen\u00e8ve",
+                    "score": null,
+                    "coordinate": {
+                        "type": "WGS84",
+                        "x": 46.210228,
+                        "y": 6.142435
+                    },
+                    "distance": null
+                }
+            },
+            "duration": "00d00:52:00",
+            "transfers": 0,
+            "service": null,
+            "products": [
+                "RE33"
+            ],
+            "capacity1st": null,
+            "capacity2nd": null,
+            "sections": [
+                {
+                    "journey": {
+                        "name": "018488",
+                        "category": "RE",
+                        "subcategory": null,
+                        "categoryCode": null,
+                        "number": "33",
+                        "operator": "SBB",
+                        "to": "Gen\u00e8ve",
+                        "passList": [
+                            {
+                                "station": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": null,
+                                "arrivalTimestamp": null,
+                                "departure": "2026-02-20T00:30:00+0100",
+                                "departureTimestamp": 1771543800,
+                                "delay": 0,
+                                "platform": "8",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:30:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501120",
+                                    "name": "Lausanne",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.516795,
+                                        "y": 6.629087
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:34:00+0100",
+                                "arrivalTimestamp": 1771544040,
+                                "departure": "2026-02-20T00:35:00+0100",
+                                "departureTimestamp": 1771544100,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:35:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501118",
+                                    "name": "Renens VD",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.537046,
+                                        "y": 6.57892
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:41:00+0100",
+                                "arrivalTimestamp": 1771544460,
+                                "departure": "2026-02-20T00:41:00+0100",
+                                "departureTimestamp": 1771544460,
+                                "delay": 1,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:42:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501037",
+                                    "name": "Morges",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.511102,
+                                        "y": 6.493958
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:49:00+0100",
+                                "arrivalTimestamp": 1771544940,
+                                "departure": "2026-02-20T00:50:00+0100",
+                                "departureTimestamp": 1771545000,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:50:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501035",
+                                    "name": "Allaman",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.47576,
+                                        "y": 6.399683
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:53:00+0100",
+                                "arrivalTimestamp": 1771545180,
+                                "departure": "2026-02-20T00:54:00+0100",
+                                "departureTimestamp": 1771545240,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T00:54:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501033",
+                                    "name": "Rolle",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.462757,
+                                        "y": 6.336387
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T00:59:00+0100",
+                                "arrivalTimestamp": 1771545540,
+                                "departure": "2026-02-20T01:00:00+0100",
+                                "departureTimestamp": 1771545600,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T01:00:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501031",
+                                    "name": "Gland",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.419998,
+                                        "y": 6.269128
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T01:04:00+0100",
+                                "arrivalTimestamp": 1771545840,
+                                "departure": "2026-02-20T01:05:00+0100",
+                                "departureTimestamp": 1771545900,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T01:05:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501030",
+                                    "name": "Nyon",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.384429,
+                                        "y": 6.23595
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T01:12:00+0100",
+                                "arrivalTimestamp": 1771546320,
+                                "departure": "2026-02-20T01:13:00+0100",
+                                "departureTimestamp": 1771546380,
+                                "delay": 0,
+                                "platform": null,
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": null,
+                                    "departure": "2026-02-20T01:13:00+0100",
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501023",
+                                    "name": "Coppet",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.317405,
+                                        "y": 6.187806
+                                    },
+                                    "distance": null
+                                }
+                            },
+                            {
+                                "station": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                },
+                                "arrival": "2026-02-20T01:22:00+0100",
+                                "arrivalTimestamp": 1771546920,
+                                "departure": null,
+                                "departureTimestamp": null,
+                                "delay": 0,
+                                "platform": "1",
+                                "prognosis": {
+                                    "platform": null,
+                                    "arrival": "2026-02-20T01:22:00+0100",
+                                    "departure": null,
+                                    "capacity1st": null,
+                                    "capacity2nd": null
+                                },
+                                "realtimeAvailability": null,
+                                "location": {
+                                    "id": "8501008",
+                                    "name": "Gen\u00e8ve",
+                                    "score": null,
+                                    "coordinate": {
+                                        "type": "WGS84",
+                                        "x": 46.210228,
+                                        "y": 6.142435
+                                    },
+                                    "distance": null
+                                }
+                            }
+                        ],
+                        "capacity1st": null,
+                        "capacity2nd": null
+                    },
+                    "walk": null,
+                    "departure": {
+                        "station": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        },
+                        "arrival": null,
+                        "arrivalTimestamp": null,
+                        "departure": "2026-02-20T00:30:00+0100",
+                        "departureTimestamp": 1771543800,
+                        "delay": 0,
+                        "platform": "8",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": null,
+                            "departure": "2026-02-20T00:30:00+0100",
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501120",
+                            "name": "Lausanne",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.516795,
+                                "y": 6.629087
+                            },
+                            "distance": null
+                        }
+                    },
+                    "arrival": {
+                        "station": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        },
+                        "arrival": "2026-02-20T01:22:00+0100",
+                        "arrivalTimestamp": 1771546920,
+                        "departure": null,
+                        "departureTimestamp": null,
+                        "delay": 0,
+                        "platform": "1",
+                        "prognosis": {
+                            "platform": null,
+                            "arrival": "2026-02-20T01:22:00+0100",
+                            "departure": null,
+                            "capacity1st": null,
+                            "capacity2nd": null
+                        },
+                        "realtimeAvailability": null,
+                        "location": {
+                            "id": "8501008",
+                            "name": "Gen\u00e8ve",
+                            "score": null,
+                            "coordinate": {
+                                "type": "WGS84",
+                                "x": 46.210228,
+                                "y": 6.142435
+                            },
+                            "distance": null
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "from": {
+        "id": "8501120",
+        "name": "Lausanne",
+        "score": null,
+        "coordinate": {
+            "type": "WGS84",
+            "x": 46.516795,
+            "y": 6.629087
+        },
+        "distance": null
+    },
+    "to": {
+        "id": "8501008",
+        "name": "Gen\u00e8ve",
+        "score": null,
+        "coordinate": {
+            "type": "WGS84",
+            "x": 46.210228,
+            "y": 6.142435
+        },
+        "distance": null
+    },
+    "stations": {
+        "from": [
+            {
+                "id": "8501120",
+                "name": "Lausanne",
+                "score": null,
+                "coordinate": {
+                    "type": "WGS84",
+                    "x": 46.516795,
+                    "y": 6.629087
+                },
+                "distance": null
+            }
+        ],
+        "to": [
+            {
+                "id": "8501008",
+                "name": "Gen\u00e8ve",
+                "score": null,
+                "coordinate": {
+                    "type": "WGS84",
+                    "x": 46.210228,
+                    "y": 6.142435
+                },
+                "distance": null
+            }
+        ]
+    }
+}

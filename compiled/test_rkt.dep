@@ -1,0 +1,1 @@
+("8.17" ta6osx ("a256002a0449d4b7c3baedce890cb4f8bf8bfad5" . "a36a9486044f79fb3df7005ee68cd7d8bd5be3dc") (collects #"racket" #"runtime-config.rkt") (collects #"seekwell" #"lang" #"reader.rkt") (collects #"seekwell" #"main.rkt"))
