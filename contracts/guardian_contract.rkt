@@ -3,22 +3,22 @@
 
 ; get separate functions
 (struct/dc hierarchy
-    [name "getCountries"]
-    [key 'results['country]]
+    [name "getPillars"]
+    [key 'response.'results['pillarName]]
     [type (listof string?)]
     [children (struct/dc hierarchy
-        [name "getWrapperTypes"]
-        [key 'results['wrapperType]]
+        [name "getSections"]
+        [key 'response.'results['pillarName]]
         [type (listof string?)]
         [children (struct/dc hierarchy
-            [name "getArtistNames"]
-            [key 'results['artistName]]
+            [name "getIsHosted"]
+            [key 'response.'results['isHosted]]
             [type (listof string?)]
             [children (struct/c empty-set)])])])
 
 ; combine all into one function
 (struct/dc hierarchy
     [name "getAll"]
-    [key 'results (list 'country 'artistName 'wrapperType)]
+    [key 'response.'results (list 'pillarName 'sectionName 'isHosted)]
     [type (listof (list/c string? string? string?))]
     [children (struct/c empty-set)])
