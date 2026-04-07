@@ -61,6 +61,6 @@
 (define results-artistNames
   (for/list ([res (hash-ref json 'results)])
      (hash-ref res 'artistName)))
-(eval '(define getCountries results-countries) ns)
-(eval '(define getWrapperTypes results-wrapperTypes) ns)
-(eval '(define getArtistNames results-artistNames) ns)
+(eval '(define (getCountries) results-countries) ns)
+(eval '(define (getWrapperTypes) results-wrapperTypes) ns)
+(eval '(define (getArtistNames) results-artistNames) ns)

@@ -31,5 +31,5 @@
         (list (hash-ref (hash-ref day 'day) 'avgtemp_f)
         (hash-ref (hash-ref day 'astro) 'sunrise)
         (hash-ref (hash-ref day 'astro) 'sunset))))
-(eval '(define getCurrCondition results-currCondition) ns)
-(eval '(define getForecasts results-forecasts) ns)
+(eval '(define (getCurrCondition) results-currCondition) ns)
+(eval '(define (getForecasts) results-forecasts) ns)

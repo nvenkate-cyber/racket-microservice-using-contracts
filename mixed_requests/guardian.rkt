@@ -57,6 +57,6 @@
 (define results-isHosted
   (for/list ([res (hash-ref (hash-ref json 'response) 'results)])
      (hash-ref res 'isHosted)))
-(eval '(define getPillars results-pillarName) ns)
-(eval '(define getSections results-sectionName) ns)
-(eval '(define getIsHosted results-isHosted) ns)
+(eval '(define (getPillars) results-pillarName) ns)
+(eval '(define (getSections) results-sectionName) ns)
+(eval '(define (getIsHosted) results-isHosted) ns)
