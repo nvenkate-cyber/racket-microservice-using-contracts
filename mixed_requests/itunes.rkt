@@ -5,11 +5,12 @@
 ; hierarchy contract (user experience)
 ; args: name, key, type, children
 ; children can be #:empty or nested hierarchy/c
-; (hierarchy/c
-;    ["getAll"]
-;    ['results (list 'country 'artistName 'wrapperType)]
-;    [(listof (list/c string? string? string?))]
-;    [#:empty])
+(require "https://itunes.apple.com/search?term=jack+johnson"
+    (hierarchy/c
+   ["getAll"]
+   ['results (list 'country 'artistName 'wrapperType)]
+   [(listof (list/c string? string? string?))]
+   [#:empty]))
 
 ; exapanded version:
 (define-namespace-anchor anc)
@@ -28,19 +29,20 @@
 (eval '(define getAll results) ns)
 
 ; separate functions
-; (hierarchy/c
-;     ["getCountries"]
-;     ['results['country]]
-;     [(listof string?)]
-;     [(hierarchy/c
-;         ["getWrapperTypes"]
-;         ['results['wrapperType]]
-;         [(listof string?)]
-;         [(hierarchy/c
-;             ["getArtistNames"]
-;             ['results['artistName]]
-;             [(listof string?)]
-;             [#:empty])])])
+(require "https://itunes.apple.com/search?term=jack+johnson"
+    (hierarchy/c
+    ["getCountries"]
+    ['results['country]]
+    [(listof string?)]
+    [(hierarchy/c
+        ["getWrapperTypes"]
+        ['results['wrapperType]]
+        [(listof string?)]
+        [(hierarchy/c
+            ["getArtistNames"]
+            ['results['artistName]]
+            [(listof string?)]
+            [#:empty])])]))
 
 ; expanded version:
 (define-namespace-anchor anc)

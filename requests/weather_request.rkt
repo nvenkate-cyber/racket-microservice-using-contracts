@@ -12,12 +12,13 @@
   (-> jsexpr?
     (list/c (list/c string? string?) (list/c number? string?) (listof (list/c number? string? string?))))
     ;              name      region       curr_temp  condition each day:avgt  sunrise  sunset
-    (list 
+    (list
         ; name and region:
         (list (hash-ref (hash-ref json 'location) 'name) (hash-ref (hash-ref json 'location) 'region))
 
         ; current temp and condition:
-        (list (hash-ref (hash-ref json 'current) 'temp_f) (hash-ref (hash-ref (hash-ref json 'current) 'condition) 'text))
+        (list (hash-ref (hash-ref json 'current) 'temp_f)
+            (hash-ref (hash-ref (hash-ref json 'current) 'condition) 'text))
 
         ; forecast for each day:
         (for/list ([day (hash-ref (hash-ref json 'forecast) 'forecastday)])
@@ -31,6 +32,6 @@
   (contract json))
 
 ; main call
-(get-response 
+(get-response
   "http://api.weatherapi.com/v1/forecast.json?key=7ae96906839d4c73a80215338261702&q=60202&days=7"
   c)

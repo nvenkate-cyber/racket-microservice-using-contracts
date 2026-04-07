@@ -5,12 +5,12 @@
 ; hierarchy contract (user experience)
 ; args: name, key, type, children
 ; children can be #:empty or nested hierarchy/c
-;(hierarchy/c
-;    ["getAll"]
-;    ['response.'results(list 'pillarName 'sectionName 'isHosted)]
-;    [(listof (list/c string? string? string?))]
-;    [#:empty])
-
+(require "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
+    (hierarchy/c
+   ["getAll"]
+   ['response.'results(list 'pillarName 'sectionName 'isHosted)]
+   [(listof (list/c string? string? string?))]
+   [#:empty]))
 ; exapanded version:
 (define-namespace-anchor anc)
 (define ns (namespace-anchor->namespace anc))
@@ -27,19 +27,20 @@
 
 
 ; separate functions
-; (hierarchy/c
-;     ["getPillars"]
-;     ['response.'results['pillarName]]
-;     [(listof string?)]
-;     [(hierarchy/c
-;         ["getSections"]
-;         ['response.'results['pillarName]]
-;         [(listof string?)]
-;         [(hierarchy/c
-;             ["getIsHosted"]
-;             ['response.'results['isHosted]]
-;             [(listof string?)]
-;             [#:empty])])])
+(require "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
+    (hierarchy/c
+    ["getPillars"]
+    ['response.'results['pillarName]]
+    [(listof string?)]
+    [(hierarchy/c
+        ["getSections"]
+        ['response.'results['pillarName]]
+        [(listof string?)]
+        [(hierarchy/c
+            ["getIsHosted"]
+            ['response.'results['isHosted]]
+            [(listof string?)]
+            [#:empty])])]))
 
 ; expanded version:
 (define-namespace-anchor anc)

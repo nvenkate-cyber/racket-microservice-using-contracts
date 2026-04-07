@@ -5,17 +5,17 @@
 ; hierarchy contract (user experience)
 ; args: name, key, type, children
 ; children can be #:empty or nested hierarchy/c
-; (require "http://api.weatherapi.com/v1/forecast.json?key=7ae96906839d4c73a80215338261702&q=60202&days=7"
-;     (hierarchy/c
-;    ["getCurrCondition"]
-;    [list ('current.'temp_f) ('current.'condition.'text)]
-;    [(listof number? string?)]
-;    [(hierarchy/c
-;        ["getForecasts"]
-;        ['forecast.'forecastday[(list ('day.'avgtemp_f) ('astro.'sunrise) ('astro.'sunrise))]]
-;        [(listof (list/c number? string? string?))]
-;        [#:empty]
-;        )]))
+(require "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/summary?region=us&lang=en&contentorigin=espn&event=401772984"
+    (hierarchy/c
+   ["getCurrCondition"]
+   [list ('current.'temp_f) ('current.'condition.'text)]
+   [(listof number? string?)]
+   [(hierarchy/c
+       ["getForecasts"]
+       ['forecast.'forecastday[(list ('day.'avgtemp_f) ('astro.'sunrise) ('astro.'sunrise))]]
+       [(listof (list/c number? string? string?))]
+       [#:empty]
+       )]))
 
 ; exapanded version:
 (define-namespace-anchor anc)
