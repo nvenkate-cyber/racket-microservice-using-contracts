@@ -5,17 +5,17 @@
 ; hierarchy contract (user experience)
 ; args: name, key, type, children
 ; children can be #:empty or nested hierarchy/c
-; (require "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/summary?region=us&lang=en&contentorigin=espn&event=401772984"
-;     (hierarchy/c
-;    ["getTeams"]
-;    ['boxscore.'teams['team.'displayName]]
-;    [(listof string?)]
-;    [(hierarchy/c
-;        ["getVenue"]
-;        ['gameInfo.'venue.'fullName]
-;        [string?]
-;        [#:empty]
-;        )]))
+(import "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/summary?region=us&lang=en&contentorigin=espn&event=401772984"
+    (hierarchy/c
+   ["getTeams"]
+   ['boxscore.'teams['team.'displayName]]
+   [(listof string?)]
+   [(hierarchy/c
+       ["getVenue"]
+       ['gameInfo.'venue.'fullName]
+       [string?]
+       [#:empty]
+       )]))
 
 ; exapanded version:
 (define-namespace-anchor anc)

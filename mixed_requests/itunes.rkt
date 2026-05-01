@@ -8,7 +8,7 @@
 (require "https://itunes.apple.com/search?term=jack+johnson"
     (hierarchy/c
    ["getAll"]
-   ['results (list 'country 'artistName 'wrapperType)]
+   [(each 'results (get 'country 'artistName 'wrapperType))]
    [(listof (list/c string? string? string?))]
    [#:empty]))
 
@@ -41,6 +41,21 @@
         [(hierarchy/c
             ["getArtistNames"]
             ['results['artistName]]
+            [(listof string?)]
+            [#:empty])])]))
+
+(require "https://itunes.apple.com/search?term=jack+johnson"
+    (hierarchy/c
+    ["getCountries"]
+    [(each 'results (get 'country))]
+    [(listof string?)]
+    [(hierarchy/c
+        ["getWrapperTypes"]
+        [(each 'results (get 'wrapperType))]
+        [(listof string?)]
+        [(hierarchy/c
+            ["getArtistNames"]
+            [(each 'results (get 'artistName))]
             [(listof string?)]
             [#:empty])])]))
 

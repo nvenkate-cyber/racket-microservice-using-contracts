@@ -5,12 +5,13 @@
 ; hierarchy contract (user experience)
 ; args: name, key, type, children
 ; children can be #:empty or nested hierarchy/c
-(require "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
+(import "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
     (hierarchy/c
-   ["getAll"]
-   ['response.'results(list 'pillarName 'sectionName 'isHosted)]
-   [(listof (list/c string? string? string?))]
-   [#:empty]))
+        ["getAll"]
+        [(at 'response) (each 'results) (get 'pillarName 'sectionName 'isHosted)]
+        [(listof (list/c string? string? string?))]
+        [#:empty]))
+
 ; exapanded version:
 (define-namespace-anchor anc)
 (define ns (namespace-anchor->namespace anc))
@@ -27,18 +28,18 @@
 
 
 ; separate functions
-(require "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
+(import "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2"
     (hierarchy/c
     ["getPillars"]
-    ['response.'results['pillarName]]
+    [(at 'response) (each 'results) (get 'pillarName)]
     [(listof string?)]
     [(hierarchy/c
         ["getSections"]
-        ['response.'results['pillarName]]
+        [(at 'response) (each 'results) (get 'sectionName)]
         [(listof string?)]
         [(hierarchy/c
             ["getIsHosted"]
-            ['response.'results['isHosted]]
+            [(at 'response) (each 'results) (get 'isHosted)]
             [(listof string?)]
             [#:empty])])]))
 
@@ -60,3 +61,18 @@
 (eval '(define (getPillars) results-pillarName) ns)
 (eval '(define (getSections) results-sectionName) ns)
 (eval '(define (getIsHosted) results-isHosted) ns)
+
+
+; without evals:
+(define json (call/input-url (string->url "https://content.guardianapis.com/search?tag=environment/recycling&api-key=df8faaab-b349-41a0-b634-e5a6bbd6e7e2")
+                            get-pure-port
+                            (compose string->jsexpr port->string)))
+(define getPillarName
+  (for/list ([res (hash-ref (hash-ref json 'response) 'results)])
+     (hash-ref res 'pillarName)))
+(define getSectionName
+  (for/list ([res (hash-ref (hash-ref json 'response) 'results)])
+     (hash-ref res 'sectionName)))
+(define getIsHosted
+  (for/list ([res (hash-ref (hash-ref json 'response) 'results)])
+     (hash-ref res 'isHosted)))
