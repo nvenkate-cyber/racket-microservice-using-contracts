@@ -5,7 +5,7 @@
     (define-syntax-class path-step
         (pattern ((~literal at) key:expr))
         (pattern ((~literal each) key:expr))
-        (pattern ((~literal get) (~seq key:expr))))
+        (pattern ((~literal get) key:expr ...)))
 
     ; match with hierarchy/c or #:empty
     (define-syntax-class contract
