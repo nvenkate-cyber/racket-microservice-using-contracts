@@ -16,7 +16,8 @@
   (define-syntax-class contract
     #:description "contract hierarchy"
     #:attributes ()
-    (pattern (~datum #:empty))
+    (pattern ((~datum hierarchy/c)
+              [step:path-step (~optional (~seq #:name name:str))]))
     (pattern ((~datum hierarchy/c)
               [step:path-step (~optional (~seq #:name name:str))]
               [child:contract ...])))
@@ -34,10 +35,22 @@
              #`(map (lambda (x) #,(build-expr (cdr path) #'x)) #,next))
            (build-expr (cdr path) next))]))
 
+  ;; (define name (delay <expr over (force json)>))
+  (define (make-def name-str path json-id)
+    #`(define #,(format-id json-id "~a" name-str)
+        (thunk
+          #,(build-expr path #`(#,json-id)))))
+
   ;; returns a list of (define ...) forms
   (define (process-hierarchy h path json-id)
     (syntax-parse h
-      [(~datum #:empty) '()]
+      [((~datum hierarchy/c)
+        [step:path-step (~optional (~seq #:name name:str))])
+       (define new-path
+         (append path (list (cons (syntax-e #'step.kind) #'step.key))))
+       (if (attribute name)
+          (list (make-def (syntax-e #'name) new-path json-id))
+          '())]
       [((~datum hierarchy/c)
         [step:path-step (~optional (~seq #:name name:str))]
         [child ...])
@@ -45,8 +58,7 @@
          (append path (list (cons (syntax-e #'step.kind) #'step.key))))
        (append
         (if (attribute name)
-            (list #`(define #,(format-id json-id "~a" (syntax-e #'name))
-                      #,(build-expr new-path json-id)))
+            (list (make-def (syntax-e #'name) new-path json-id))
             '())
         (append-map (lambda (c) (process-hierarchy c new-path json-id))
                     (syntax->list #'(child ...))))])))
@@ -57,25 +69,24 @@
      (define json-id (datum->syntax stx 'json))
      #`(begin
          (define #,json-id
-           (call/input-url (string->url api-url) get-pure-port
-                           (compose string->jsexpr port->string)))
+           (thunk
+             (call/input-url (string->url api-url) get-pure-port
+                             (compose string->jsexpr port->string))))
          #,@(process-hierarchy #'h '() json-id))]))
 
 (define-hierarchy
   "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/summary?region=us&lang=en&contentorigin=espn&event=401772984"
   (hierarchy/c
-   [(at 'boxscore) #:name "atFunction"]
+   [(at 'boxscore) #:name "atFunction"] ;; string names can be identifiers, attach contracts here
    [(hierarchy/c
      [(each 'teams)]
      [(hierarchy/c
-       [(get 'homeAway) #:name "getPillarName"]
-       [#:empty])
+       [(get 'homeAway) #:name "getPillarName"])
       (hierarchy/c
        [(at 'team)]
        [(hierarchy/c
-         [(get 'name) #:name "getTeamNames"]
-         [#:empty])])
-      #:empty])]))
+         [(get 'name) #:name "getTeamNames"])])
+      ])]))
 
-getPillarName   ; '("away" "home")
+(getPillarName)   ; '("away" "home")
 getTeamNames    ; '("49ers" "Seahawks")
